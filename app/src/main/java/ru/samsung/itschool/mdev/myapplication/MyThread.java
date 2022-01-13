@@ -12,8 +12,8 @@ public class MyThread extends Thread {
     // указатель на SurfaceView
     SurfaceHolder surfaceHolder;
     boolean flag;
-    
-    long startTime;
+
+   // long startTime;
 
     MyThread(SurfaceHolder holder) {
         this.flag = false;
@@ -36,7 +36,7 @@ public class MyThread extends Thread {
     @Override
     public void run() {
         Canvas canvas;
-        startTime = getTime(); // ??
+       // startTime = getTime(); // ??
         while(flag) {
             long currentTime = getTime();
             long elapsedTime = currentTime - redrawTime;
